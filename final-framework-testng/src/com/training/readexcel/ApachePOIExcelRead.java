@@ -71,6 +71,15 @@ public class ApachePOIExcelRead {
 							tempList1[cellCount] =cell.getStringCellValue();
 						}
 						break;
+					//case Cell.CELL_TYPE_BLANK:
+						
+						/* if (cell.getCellType() == null)
+						{
+							 String nullString = null;
+							 cell.setCellValue(" ");
+						}
+						 break;*/
+						
 					}
 					cellCount ++; 
 				}
@@ -88,14 +97,5 @@ public class ApachePOIExcelRead {
 		return list1;
 	}
 
-	public static void main(String[] args) {
-		String fileName = "C:/Users/Naveen/Desktop/Testing.xlsx";
-		
-		for(String [] temp : new ApachePOIExcelRead().getExcelContent(fileName)){
-			for(String  tt : temp){
-				System.out.println(tt);
-			}
-		}
-
+	
 	}
-}

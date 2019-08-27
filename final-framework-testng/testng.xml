@@ -5,6 +5,11 @@
    <test name = "Sample test">
       <classes>
          <class name = "com.training.sanity.tests.LoginTests" />
+         <class name = "com.training.sanity.tests.Changepassword_match_RTTC_007" />
+         <class name = "com.training.sanity.tests.Add_product_cart_RTC009"/>
+         <class name = "com.training.sanity.tests.Adminlogin"/>
+         <class name = "com.training.sanity.RTTC_038_AddCategory"/>
+         
       </classes>
    </test>
 </suite>	
